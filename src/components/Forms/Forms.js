@@ -27,15 +27,17 @@ const array = [
    ];
    
 const Forms = () => {
+  
     return (
         <div className='mt-6 bg-slate-600  p-3 '>
-        
-         <form className='border-2 rounded '>
+          <h1 className='mb-3'>Form validation</h1>
+         <form className='border-2 w-60 mx-auto rounded' >
+         
              {
 
                 array.map(inputData => <Form inputData = {inputData} ></Form> ) 
              }
-             <button className='bg-indigo-500 p-3 mt-3'>submit</button>
+             <input className='border-2 p-3 mb-2' type="submit" value="Submit"   />  
          </form>
         </div>
     );
